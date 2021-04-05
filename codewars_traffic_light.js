@@ -6,8 +6,8 @@ Complete the function that takes a string as an argument representing the curren
 For example, update_light('green') should return 'yellow'.
 */
 
-function updateLight(current) {
-  
-  //your code here!
-
+const updateLight = (current) => {
+  return current.toLowerCase() === 'red' ? 'green'
+         : current.toLowerCase() === 'yellow' ? 'red'
+         : 'yellow';
 }
